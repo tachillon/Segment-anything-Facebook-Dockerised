@@ -6,8 +6,7 @@
 
 ## Installation
 
-prerequisites: Docker (https://docs.docker.com/engine/install/) and CUDA drivers (https://docs.nvidia.com/cuda/cuda-installation-guide-linux). \
-
+prerequisites: Docker (https://docs.docker.com/engine/install/) and CUDA drivers (https://docs.nvidia.com/cuda/cuda-installation-guide-linux).
 ## Run Locally
 
 Clone the project

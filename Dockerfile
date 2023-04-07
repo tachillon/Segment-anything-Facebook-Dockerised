@@ -3,8 +3,8 @@ FROM nvidia/cuda:12.0.1-cudnn8-devel-ubuntu20.04
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-            gcc                            \
             git                            \
+            wget                           \
             python3                        \
             python3-dev                    \
             python3-pip                    \  
@@ -22,3 +22,7 @@ RUN git clone https://github.com/facebookresearch/segment-anything.git && \
     pip3 install -e .
 
 RUN pip3 install torch torchvision opencv-python pycocotools matplotlib onnxruntime onnx
+
+RUN wget https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth -O /home/sam_vit_h_4b8939.pth
+
+WORKDIR /home

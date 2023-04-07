@@ -39,7 +39,7 @@ def draw_anns(masks, image, output_path="result.png"):
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument("--image_path", type=str, default="1.jpg")
-argparser.add_argument("--checkpoint", type=str, default="sam_vit_h_4b8939.pth")
+argparser.add_argument("--checkpoint", type=str, default="/home/sam_vit_h_4b8939.pth")
 args = argparser.parse_args()
 
 # Delete the folder if it exists
